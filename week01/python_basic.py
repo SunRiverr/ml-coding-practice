@@ -399,4 +399,7 @@ for i in range(5, 20, 3):
 len('Python')
 
 print(sorted([3, 0, 2, 1]))
-print(sorted)
+print(sorted('Python'))
+
+# 패키지, 모듈 사용
+# Request(')
