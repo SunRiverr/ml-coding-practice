@@ -312,6 +312,5 @@ def sum2(*args):
     x = 0
     for i in args:
         x += i
-        return x
-    
+    return x
     
