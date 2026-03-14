@@ -185,3 +185,8 @@ dic = {'name':'Hong', 'phone':'01012345678', 'birth':'0814'}
 #원소 추가
 dic[1] = 'a'
 print(dic)
+
+dic['pet'] = 'dog'
+print(dic)
+
+# 원소 삭제
