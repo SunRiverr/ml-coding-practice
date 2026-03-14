@@ -218,4 +218,4 @@ for key, value in dic.items():
 dic.clear()
 print(dic)
 
-# 집합 만들기기
+# 집합 만들기
