@@ -435,4 +435,7 @@ for i in range(6, 11):
 f.close()
 
 # 파일 모드 'r' - readline()
-f = open
+f = open('example.txt', 'r')
+
+
+while True
