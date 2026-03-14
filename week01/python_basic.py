@@ -421,4 +421,4 @@ print(f)
 f.close()
 
 # 파일 쓰기
-f = open('')
+f = open('example.txt', 'w')
