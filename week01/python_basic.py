@@ -101,4 +101,4 @@ print(d[0:3])
 
 # 리스트 연결
 print(a + b)
-print()
+print(b[0] + " hi~ ^^;")
