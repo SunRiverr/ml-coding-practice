@@ -423,9 +423,13 @@ f.close()
 # 파일 쓰기
 f = open('example.txt', 'w')
 for i in range(1, 6):
-    data = '%d번쨰 줄입니다. \n' % ㅑ
+    data = '%d번쨰 줄입니다. \n' % i
     f.write(data)
 f.close()
 
 # 파일에 내용 추가하기
-f = open
+f = open('example.txt', 'w')
+for i in range(1, 6):
+    data = '%d번쨰 줄입니다. \n' % i
+    f.write(data)
+f.close()
