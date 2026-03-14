@@ -314,3 +314,12 @@ def sum2(*args):
         x += i
     return x
     
+# 함수 호출
+a = 5
+b = 3
+print(sum1(a, b))
+print(sum1(3, 5))
+print(sum(1, 2, 3, 4, 5))
+print(sum2(2, 3.5, 10))
+
+"""## 내장 함수"""
