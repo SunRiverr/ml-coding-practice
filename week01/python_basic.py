@@ -204,4 +204,6 @@ print(list(dic.keys()))
 for key in dic.keys():
     print(dic[key])
 
-# ㅍ미ㅕㄷ
+# value의 리스트 만들기
+print(dic.values())
+print(list(dic.values()))
