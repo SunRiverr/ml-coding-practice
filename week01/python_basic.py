@@ -126,3 +126,8 @@ a.append(5)
 print(a)
 
 # 원소 졍렬
+b.sort()
+print(a)
+
+# 원소 순서 뒤집기
+a = []
