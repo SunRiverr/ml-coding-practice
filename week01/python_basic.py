@@ -115,3 +115,14 @@ a[1:2] = ['a', 'b', 'c']
 print(a)
 
 a[-1] = ['d', 'e', 'f']
+print(a)
+
+# 삭제
+del a[-1]
+print(a)
+
+# 원소 추가
+a.append(5)
+print(a)
+
+# 원소 졍렬
