@@ -40,3 +40,5 @@ b = a[0] + a[1] + a[2]
 print(b)
 
 print(a{4:6})
+print(a[19:])
+print(a[:3])
