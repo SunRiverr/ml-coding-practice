@@ -353,3 +353,4 @@ print(str(3))
 
 # x를 리스트로 반환
 print(list("Python"))
+print((1, 2, 3))
