@@ -202,5 +202,6 @@ print(dic.keys())
 print(list(dic.keys()))
 
 for key in dic.keys():
-    print(dic.values())
+    print(dic[key])
 
+    
