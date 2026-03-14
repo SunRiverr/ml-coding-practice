@@ -355,4 +355,6 @@ print(str(3))
 print(list("Python"))
 print((1, 2, 3))
 
-# x를 리스트
+# x를 튜플로 반환
+print(tuple("Python"))
+print(tuple([1, 2, 3]))
