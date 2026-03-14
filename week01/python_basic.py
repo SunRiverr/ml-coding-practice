@@ -438,4 +438,5 @@ f.close()
 f = open('example.txt', 'r')
 
 
-while True
+while True:
+    line = f.readline()
