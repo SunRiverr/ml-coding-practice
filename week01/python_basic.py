@@ -32,3 +32,5 @@ print("=" * 5)
 a = "Now is better than never"
 print(a[0])
 print(a[4])
+print(a[-1])
+print(a[-2])
