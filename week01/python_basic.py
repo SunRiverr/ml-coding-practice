@@ -433,3 +433,6 @@ for i in range(6, 11):
     data = '%d번쨰 줄입니다. \n' % i
     f.write(data)
 f.close()
+
+# 파일 모드 'r' - readline()
+f = open
