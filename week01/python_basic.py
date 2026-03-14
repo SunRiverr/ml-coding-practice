@@ -456,4 +456,4 @@ for lines in lines:
     f.close()
 
 # 파일 모드 'r' -read()
-f = open('example.txt', 'w')
+f = open('example.txt', 'w') as f:
