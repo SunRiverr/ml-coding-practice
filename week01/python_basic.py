@@ -63,3 +63,5 @@ print(c)
 print(a.upper())
 print(b.lower())
 
+# 공백 제거
+d = "" 
