@@ -79,7 +79,7 @@ condition = (
   (df['comment_length'] >= 100) &       #댓글 길이 100자 이상
   (df['likes'] >= 20) &                 #좋아요 20개 이상
   (~df['is_spam']) &                    #스팸 댓글이 아니어야 함
-  (df['has_image'])                     #이미지다 포함된 댓글이어야 함함
+  (df['has_image'])                     #이미지다 포함된 댓글이어야 함
 )
 
 # 조건을 만족하는 행들 필터링
@@ -88,4 +88,4 @@ print(winner_df)
 
 print(sample_df.reset_index())
 
-print(sample_df.reset_index(drop=True))
+print(sample_df.reset_index(drop=True))          #기존 인덱스는 제거하기
