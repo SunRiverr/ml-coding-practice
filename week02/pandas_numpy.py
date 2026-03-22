@@ -47,3 +47,6 @@ netfilx = pd.read_csv('2.1.1.netflix.csv')
 print(netfilx.head())
 
 print(netfilx['release_year'])
+print(netfilx['release_year'] > 2015)
+
+more2015 = netfilx[netfilx['release_year'] > 2015]
