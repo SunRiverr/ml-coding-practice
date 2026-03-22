@@ -40,4 +40,4 @@ print(sample_df.iloc[0:3])
 print(sample_df.iloc[0:3, 2:4])
 
 print(sample_df.drop(['var_1','var_3'], axis=1))
-pri(sample_df)
+print(sample_df)
