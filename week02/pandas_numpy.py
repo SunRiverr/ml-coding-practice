@@ -58,4 +58,4 @@ print(less2015.head())
 
 print((netfilx['release_year'] > 2015) & (netfilx['type'] == 'TV Show'))
 
-more2015_tv = netfilx
+more2015_tv = netfilx[~(netfilx['release_year'] > 2015) & (netfilx['type'] == 'TV Show')]
