@@ -59,4 +59,11 @@ print(less2015.head())
 print((netfilx['release_year'] > 2015) & (netfilx['type'] == 'TV Show'))
 
 more2015_tv = netfilx[~(netfilx['release_year'] > 2015) & (netfilx['type'] == 'TV Show')]
+print(more2015_tv.head())
+
+more2015_or_tv = netfilx[~(netfilx['release_year'] > 2015) | (netfilx['type'] == 'TV Show')]
 print(more2015_or_tv.head())
+
+data = {
+    'name': ['Alice', ]
+}
