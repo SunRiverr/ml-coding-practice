@@ -28,4 +28,10 @@ print(sample_df['var_5'])
 # print(sample_df['var_1', 'var_2'])
 print(sample_df[['var', 'var_4']])
 
-#loc 는 
+#loc 는 locate의 앞글자
+print(sample_df.loc['a'])
+print(sample_df.loc[['a','c','e']])
+print(sample_df.loc['a':'c'])
+
+#iloc: integer locate의 약자
+print(sample)
