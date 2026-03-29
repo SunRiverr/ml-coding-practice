@@ -64,3 +64,10 @@ print(survived_counts)
 
 # 수평 막대 그래프 그리기
 bars = plt.barh(survived_counts.index, survived_counts, color=['darkturquoise', 'salmon'])
+plt.title('Survived Counts by Gender on Titanic')
+plt.xlabel('Count')
+plt.ylabel('Gender')
+plt.legend(bars, ['Survived - Female', 'Survived - Male'], loc='upper right')
+
+# 차이 강조를 위해 수평선 추가
+plt.axvline(x=survived_counts['male'], color='gray', linestyle='--', linewidth=1)
