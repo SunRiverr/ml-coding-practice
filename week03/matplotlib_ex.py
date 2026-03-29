@@ -314,3 +314,11 @@ plt.suptitle('Survival Analysis by Number of Parents/Children (Parch) on the Tit
 plt.tight_layout()
 plt.savefig('Figure13.png')
 plt.close()
+
+## **개별 서브플롯 동시에 생성하기**
+
+# 2*2 구성의 figure
+fig, axes = plt.subplots(2, 2)
+
+# 선그래프
+axes[0, 0].plot([1, 2, 3])
