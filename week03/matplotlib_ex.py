@@ -358,3 +358,4 @@ axes[1].legend(loc='upper right')
 
 # 제목 설정
 fig.suptitle('Survival Analysis by Number of parents/Children (Parch) on the Titanic')
+figw
