@@ -34,3 +34,14 @@ null_row_idx = housing.isnull().any(axis=1)
 housing.loc[null_row_idx].head()
 
 from sklearn.impute import SimpleImputer
+
+imputer = SimpleImputer(strategy="median")
+
+# 수치형 특성만 추출
+housing_num = housing.select_dtypes(include=[np.number])
+housing.head()
+
+imputer.fit(housing_num)
+
+print(imputer.statistics_)          #
+print(housing_num.median().values)  #
