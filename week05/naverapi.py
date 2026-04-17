@@ -58,4 +58,4 @@ def getNaverSearch(node, srcText, page_start, display):
         req.add_header("X-Naver-Client-Secret", client_secret)
 
         try:
-            resp
+            response = urllib.request.urlopen
