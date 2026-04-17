@@ -19,3 +19,7 @@ def main():
   ed_cd = "E"                           # E : 방한외래관강객, D : 해외 출국
 
   jsonResult, result, natName, dataEND = getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear)  #[CODE 3]
+
+   #파일 저장 : csv 파일
+  columns = ["입국자국가", "국가코드", "입국연월", "입국자 수"]
+  
