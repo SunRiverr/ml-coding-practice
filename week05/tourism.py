@@ -73,5 +73,6 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
     else:
       return json.loads(responseDecode)
     
-    """### [CODE 1]"""
-    
+"""### [CODE 1]"""
+
+def get
