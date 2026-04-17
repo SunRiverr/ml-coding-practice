@@ -68,4 +68,5 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
 
     responseDecode = getRequestUrl(url)                       #[CODE 1]
 
-    if
+    if (responseDecode == None):
+      return None
