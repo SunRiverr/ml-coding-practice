@@ -5,3 +5,8 @@ import json
 
 client_id = 'Cliend ID'
 client_secret = 'Client Secret'
+
+def main():
+
+    node = 'news'                                             # 크롤링할 대상
+    
