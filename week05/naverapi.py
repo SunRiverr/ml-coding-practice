@@ -68,4 +68,6 @@ def getNaverSearch(node, srcText, page_start, display):
             return None
         
 
-        def getPostData(post, jsonResult, cnt): 
+        def getPostData(post, jsonResult, cnt):  #[CODE 3]
+            title = post['title']
+            
