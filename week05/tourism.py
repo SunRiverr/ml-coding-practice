@@ -64,4 +64,6 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
     parameters += "&NAT_CD=" + nat_cd
     parameters += "&ED_CD=" + ed_cd
 
-    
+    url = service_url + parameters
+
+    responseDecode = getRequestUrl(url)                         #
