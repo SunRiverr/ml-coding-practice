@@ -70,3 +70,8 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
 
     if (responseDecode == None):
       return None
+    else:
+      return json.loads(responseDecode)
+    
+    """### [CODE 1]"""
+    
