@@ -4,7 +4,7 @@ import datetime
 import json
 
 client_id = 'v5q5iXpHckR9iQvuwiwz'
-client_secert = 'tuA54chZ0u'
+client_secret = 'tuA54chZ0u'
 
 def main():
 
@@ -55,7 +55,7 @@ def getRequestUrl(url):
     req =urllib.request.Request(url)
 
     req.add_header("X-Naver_Client_Id", client_id)
-    req.add_header("X-Naver-Client_Secret", client_secert)
+    req.add_header("X-Naver-Client_Secret", client_secret)
 
     try:
         response = urllib.request.urlopen(req)
