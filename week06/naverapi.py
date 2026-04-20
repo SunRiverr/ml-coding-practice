@@ -33,8 +33,8 @@ def main():
         
         outfile.write(jsonFile)
 
-        print("가져온 데이터: %d 건" %(cnt))
-        print('%s_naver_%s_json SAVED' % (srcText, node))
+    print("가져온 데이터: %d 건" %(cnt))
+    print('%s_naver_%s_json SAVED' % (srcText, node))
     
 
 def getNaverSearch(node, srcText, page_start, display):
