@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import urllib.parse
 import urllib.request
 import datetime
 import json
@@ -40,4 +41,6 @@ def main():
 def getNaverSearch(node, srcText, page_start, display):
     base = "https://openapi.naver.com/v1/search"
     node = "/%s.json" % node
-    parameters = ?query=%s&start=%s
+    parameters = "?query=%s&start=%s&display=%s" % (urllib.parse.quote(srcText), page_start, display)
+
+    
