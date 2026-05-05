@@ -153,4 +153,4 @@ netflix['county']
 netflix_age_country = netflix.explode('country')
 netflix_age_country\
 
-# title열의 값이 
+# title열의 값이 ‘Sankofa
