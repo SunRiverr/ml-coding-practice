@@ -27,7 +27,7 @@ for i in netflix.columns :
 
 # .fillna( ) : 결측치를 다른 값으로 대체하여 처리
 # 결측치 비율 : country(9.44%)
-netflix['county'] = netflix['county'].fillna('No Data')
+netflix['country'] = netflix['country'].fillna('No Data')
 
 # .replace(np.nan, 'b) : 결측치를 문자열 바꾸기 함수를 통해 처리
 # 결측치 비율 : director(29.91%), cast(9.37)
@@ -114,7 +114,7 @@ plt.show()
 netflix.head(3)
 
 # 넷플릭스 데이터셋의 장르별 등장 횟수 계산
-genres = netflix['listed_in'].str.split(', ', expand=True).stack.value_counts()
+genres = netflix['listed_in'].str.split(', ', expand=True).stack().value_counts()
 genres
 
 # [1단계] listed_in 열에 있는 장르를 쉼표로 분할하기
@@ -146,8 +146,8 @@ netflix[netflix['title'].str.contains('Sankofa', na=False, case=False)]
 pd.set_option('display.max_rows', None)
 
 # 쉼표로 country 열의 값을 파이썬 리스트로 만들기
-netflix['county'] = netflix['county'].str.split(', ')
-netflix['county']
+netflix['country'] = netflix['country'].str.split(', ')
+netflix['country']
 
 # 파이썬 리스트로 바꾼 country 열의 값에 explode( ) 함수를 적용하여 개별 행으로 분리
 netflix_age_country = netflix.explode('country')
@@ -157,7 +157,7 @@ netflix_age_country\
 netflix_age_country[netflix_age_country['title'].str.contains('Sankofa', na=False, case=False)]
 
 # 각 나이 그룹에 따른 국가별 넷플릭스 콘텐츠 수 구하기
-netflix_age_country_unstack = netflix_age_country.groupby('age_gruop')['country'].value_counts().unstack()
+netflix_age_country_unstack = netflix_age_country.groupby('age_group')['country'].value_counts().unstack()
 netflix_age_country_unstack
 
 # 특정 나이 그룹에 따른 특정 나라별 콘텐츠로 필터링
@@ -186,7 +186,7 @@ cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list('', ['#221f1f','#
 sns.heatmap(netflix_age_country_unstack, cmap = cmap, linewidth=2.5, annot=True, fmt='.0%')
 
 plt.suptitle('Target ages proportion of total content by country', 
-             fontweight='bold', fontfamiy='serif', fontsize=15)
+             fontweight='bold', fontfamily='serif', fontsize=15)
 plt.title('Here we see interesting differences between countries. Most shows in South Korea are targeted to adults, for instance.',
           fontsize=12, fontfamily='serif')
 plt.show()
